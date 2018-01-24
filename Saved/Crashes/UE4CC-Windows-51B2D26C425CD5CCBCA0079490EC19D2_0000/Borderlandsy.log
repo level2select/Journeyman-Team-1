@@ -1,0 +1,908 @@
+﻿Log file open, 01/21/18 01:58:18
+LogInit:Display: Running engine for game: Borderlandsy
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1494463883) SRandInit(1494463883).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.132731
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line:  
+LogInit: Base directory: H:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.01.21-01.58.19:089][  0]LogInit: Selected Device Profile: [Windows]
+[2018.01.21-01.58.19:089][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.01.21-01.58.19:115][  0]LogInit: Computer: DESKTOP-N9RJLCO
+[2018.01.21-01.58.19:115][  0]LogInit: User: Level2Select
+[2018.01.21-01.58.19:115][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.01.21-01.58.19:115][  0]LogInit: High frequency timer resolution =3.923864 MHz
+[2018.01.21-01.58.19:116][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2018.01.21-01.58.19:116][  0]LogMemory: Platform Memory Stats for Windows
+[2018.01.21-01.58.19:116][  0]LogMemory: Process Physical Memory: 272.62 MB used, 272.62 MB peak
+[2018.01.21-01.58.19:116][  0]LogMemory: Process Virtual Memory: 260.75 MB used, 260.75 MB peak
+[2018.01.21-01.58.19:116][  0]LogMemory: Physical Memory: 5118.73 MB used,  11247.39 MB free, 16366.11 MB total
+[2018.01.21-01.58.19:116][  0]LogMemory: Virtual Memory: 671.54 MB used,  11247.39 MB free, 134217728.00 MB total
+[2018.01.21-01.58.19:385][  0]LogInit: Using OS detected language (en-GB).
+[2018.01.21-01.58.19:385][  0]LogInit: Using OS detected locale (en-GB).
+[2018.01.21-01.58.19:399][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2018.01.21-01.58.20:536][  0]LogD3D11RHI: D3D11 adapters:
+[2018.01.21-01.58.20:599][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2018.01.21-01.58.20:599][  0]LogD3D11RHI:       4043/0/8183 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.01.21-01.58.20:619][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.01.21-01.58.20:619][  0]LogD3D11RHI:       0/0/8183 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.01.21-01.58.20:619][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.01.21-01.58.20:628][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.01.21-01.58.20:628][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2018.01.21-01.58.20:628][  0]LogWindows: EnumDisplayDevices:
+[2018.01.21-01.58.20:628][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2018.01.21-01.58.20:629][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.01.21-01.58.20:629][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.01.21-01.58.20:629][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.01.21-01.58.20:629][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.01.21-01.58.20:629][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2018.01.21-01.58.20:629][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.01.21-01.58.20:629][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.01.21-01.58.20:629][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2018.01.21-01.58.20:679][  0]LogD3D11RHI: Async texture creation enabled
+[2018.01.21-01.58.20:700][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.01.21-01.58.20:750][  0]LogShaderCompilers: Guid format shader working directory is 18 characters bigger than the processId version (G:/Uni/Journeyman/Base/Borderlandsy/Intermediate/Shaders/WorkingDirectory/9708/).
+[2018.01.21-01.58.20:751][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Level2Select/AppData/Local/Temp/UnrealShaderWorkingDir/EB85A91C4E80998EE7D2B9B758ACEB9E/'.
+[2018.01.21-01.58.20:751][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2018.01.21-01.58.26:445][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2018.01.21-01.58.26:529][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2018.01.21-01.58.26:610][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2018.01.21-01.58.26:693][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2018.01.21-01.58.26:798][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2018.01.21-01.58.26:881][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2018.01.21-01.58.26:966][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.01.21-01.58.27:050][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2018.01.21-01.58.27:124][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2018.01.21-01.58.27:204][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2018.01.21-01.58.27:284][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2018.01.21-01.58.27:369][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2018.01.21-01.58.27:447][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2018.01.21-01.58.27:528][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2018.01.21-01.58.27:622][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2018.01.21-01.58.27:801][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2018.01.21-01.58.27:801][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.01.21-01.58.27:919][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2018.01.21-01.58.28:094][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2018.01.21-01.58.28:149][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2018.01.21-01.58.28:240][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2018.01.21-01.58.28:331][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.01.21-01.58.28:440][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2018.01.21-01.58.28:534][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2018.01.21-01.58.28:534][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2018.01.21-01.58.29:662][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2018.01.21-01.58.29:814][  0]LogDerivedDataCache: Loaded boot cache 0.15s 90MB C:/Users/Level2Select/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.01.21-01.58.29:814][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Level2Select/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2018.01.21-01.58.29:814][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file G:/Uni/Journeyman/Base/Borderlandsy/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.01.21-01.58.29:814][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.01.21-01.58.29:814][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file G:/Uni/Journeyman/Base/Borderlandsy/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.01.21-01.58.29:815][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.01.21-01.58.29:836][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.01.21-01.58.29:848][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Level2Select/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.01.21-01.58.29:865][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.01.21-01.58.29:866][  0]LogSlate: Using Freetype 2.6.0
+[2018.01.21-01.58.29:879][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.01.21-01.58.29:879][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.01.21-01.58.30:447][  0]LogInit: Selected Device Profile: [Windows]
+[2018.01.21-01.58.30:586][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.01.21-01.58.30:899][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.01.21-01.58.30:989][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.01.21-01.58.31:078][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.01.21-01.58.31:078][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2018.01.21-01.58.31:078][  0]LogMeshUtilities: No automatic mesh merging module available
+[2018.01.21-01.58.31:859][  0]LogNetVersion: Borderlandsy , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 504114346)
+[2018.01.21-01.58.31:940][  0]LogAssetRegistry: FAssetRegistry took 0.0292 seconds to start up
+[2018.01.21-01.58.32:072][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.097814 seconds
+[2018.01.21-01.58.32:082][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2018.01.21-01.58.32:082][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2018.01.21-01.58.32:082][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.01.21-01.58.32:208][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.01.21-01.58.36:100][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.01.21-01.58.36:195][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.01.21-01.58.37:108][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.01.21-01.58.37:729][  0]SourceControl: Info Source control is disabled
+[2018.01.21-01.58.37:732][  0]SourceControl: Info Source control is disabled
+[2018.01.21-01.58.37:835][  0]SourceControl: Info Source control is disabled
+[2018.01.21-01.58.37:918][  0]SourceControl: Info Source control is disabled
+[2018.01.21-01.58.39:234][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.01.21-01.58.40:208][  0]LogEngine: Initializing Engine...
+[2018.01.21-01.58.40:209][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.01.21-01.58.40:460][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.01.21-01.58.40:460][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.01.21-01.58.40:648][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.01.21-01.58.40:664][  0]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-01.58.40:687][  0]LogInit: FAudioDevice initialized.
+[2018.01.21-01.58.40:777][  0]LogDerivedDataCache: Saved boot cache 0.09s 90MB C:/Users/Level2Select/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.01.21-01.58.40:795][  0]LogInit: Texture streaming: Enabled
+[2018.01.21-01.58.40:981][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.01.21-01.58.41:305][  0]LogInit: Transaction tracking system initialized
+[2018.01.21-01.58.41:798][  0]BlueprintLog: New page: Editor Load
+[2018.01.21-01.58.43:405][  0]LocalizationService: Info Localization service is disabled
+[2018.01.21-01.58.44:557][  0]LogConsoleResponse:Display: 
+[2018.01.21-01.58.44:738][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.01.21-01.58.44:738][  0]LogCook:Display: Mobile HDR setting 1
+[2018.01.21-01.58.44:796][  0]LogFileCache: Scanning file cache for directory 'G:/Uni/Journeyman/Base/Borderlandsy/Content/' took 0.02s
+[2018.01.21-01.58.46:588][  0]SourceControl: Info Source control is disabled
+[2018.01.21-01.58.46:588][  0]Cmd: MAP LOAD FILE="G:/Uni/Journeyman/Base/Borderlandsy/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.01.21-01.58.46:589][  0]LightingResults: New page: Lighting Build
+[2018.01.21-01.58.46:649][  0]MapCheck: New page: Map Check
+[2018.01.21-01.58.46:649][  0]LightingResults: New page: Lighting Build
+[2018.01.21-01.58.46:675][  0]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.58.46:675][  0]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_End.uasset.
+[2018.01.21-01.58.46:675][  0]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPersonJump_End : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.58.46:675][  0]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.58.46:675][  0]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_End.uasset.
+[2018.01.21-01.58.46:675][  0]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPersonJump_End : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.58.46:677][  0]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.58.46:677][  0]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_Loop.uasset.
+[2018.01.21-01.58.46:677][  0]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPersonJump_Loop : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.58.46:677][  0]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.58.46:677][  0]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_Loop.uasset.
+[2018.01.21-01.58.46:677][  0]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPersonJump_Loop : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.58.46:678][  0]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.58.46:678][  0]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_Start.uasset.
+[2018.01.21-01.58.46:678][  0]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPersonJump_Start : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.58.46:678][  0]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.58.46:679][  0]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_Start.uasset.
+[2018.01.21-01.58.46:679][  0]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPersonJump_Start : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.58.46:821][  0]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.58.46:821][  0]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPersonJump_Start
+[2018.01.21-01.58.46:821][  0]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/CharacterAnimationBP.uasset.
+[2018.01.21-01.58.46:821][  0]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPersonJump_Start
+[2018.01.21-01.58.46:821][  0]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/CharacterAnimationBP : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.58.46:821][  0]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.58.46:822][  0]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPersonJump_Loop
+[2018.01.21-01.58.46:822][  0]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/CharacterAnimationBP.uasset.
+[2018.01.21-01.58.46:822][  0]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPersonJump_Loop
+[2018.01.21-01.58.46:822][  0]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/CharacterAnimationBP : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.58.46:823][  0]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.58.46:823][  0]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPersonJump_End
+[2018.01.21-01.58.46:823][  0]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/CharacterAnimationBP.uasset.
+[2018.01.21-01.58.46:823][  0]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPersonJump_End
+[2018.01.21-01.58.46:823][  0]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/CharacterAnimationBP : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.58.47:423][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-01.58.47:438][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.01.21-01.58.47:463][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.01.21-01.58.47:539][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 75.478ms to complete.
+[2018.01.21-01.58.47:539][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.951
+[2018.01.21-01.58.49:141][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2018.01.21-01.58.49:268][  0]LogCollectionManager: Loaded 0 collections in 0.001195 seconds
+[2018.01.21-01.58.49:400][  0]LogFileCache: Scanning file cache for directory 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/Collections/' took 0.01s
+[2018.01.21-01.58.49:400][  0]LogFileCache: Scanning file cache for directory 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Developers/Level2Select/Collections/' took 0.01s
+[2018.01.21-01.58.49:400][  0]LogFileCache: Scanning file cache for directory 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Collections/' took 0.01s
+[2018.01.21-01.58.49:400][  0]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.Borderlandsy
+[2018.01.21-01.58.49:400][  0]LogTemp: CWD: H:\Program Files\Epic Games\UE_4.16\Engine\Binaries\DotNET\IOS
+[2018.01.21-01.58.49:400][  0]LogTemp: Initial Dir: H:\Program Files\Epic Games\UE_4.16
+[2018.01.21-01.58.49:400][  0]LogTemp: Env CWD: H:\Program Files\Epic Games\UE_4.16\Engine\Binaries\DotNET\IOS
+[2018.01.21-01.58.49:400][  0]LogTemp: BranchPath = DESKTOP-N9RJLCO/H/Program Files/Epic Games/UE_4.16/Engine/Binaries --- GameBranchPath = DESKTOP-N9RJLCO/H/Program Files/Epic Games/UE_4.16/Engine/Binaries
+[2018.01.21-01.58.49:400][  0]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Level2Select\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2018.01.21-01.58.49:400][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2018.01.21-01.58.49:417][  0]LogContentBrowser: Native class hierarchy populated in 0.0162 seconds. Added 2329 classes and 491 folders.
+[2018.01.21-01.58.49:503][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2018.01.21-01.58.49:561][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2018.01.21-01.58.49:638][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2018.01.21-01.58.49:703][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2018.01.21-01.58.49:711][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2018.01.21-01.58.49:824][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2018.01.21-01.58.49:824][  0]LogLoad: (Engine Initialization) Total time: 33.20 seconds
+[2018.01.21-01.58.49:825][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.24 seconds
+[2018.01.21-01.58.49:825][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2018.01.21-01.58.50:163][  0]LogOcInput: OculusInput pre-init called
+[2018.01.21-01.58.50:163][  0]LogHMD: Starting GearVRController plugin
+[2018.01.21-01.58.50:186][  0]LogContentStreaming: Texture pool size now 800 MB
+[2018.01.21-01.58.50:192][  0]LogSlate: Took 0.003732 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.01.21-01.58.50:198][  0]LogSlate: Took 0.003598 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.01.21-01.58.50:510][  1]LogRenderer: Reallocating scene render targets to support 464x492 NumSamples 1 (Frame:1).
+[2018.01.21-01.58.50:510][  1]LogAssetRegistry: Asset discovery search completed in 18.5939 seconds
+[2018.01.21-01.58.50:513][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2018.01.21-01.58.50:513][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000052 seconds (updated 0 objects)
+[2018.01.21-01.58.51:168][  3]LogSlate: Took 0.000531 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.01.21-01.59.00:441][357]LogRenderer: Reallocating scene render targets to support 912x576 NumSamples 1 (Frame:329).
+[2018.01.21-01.59.02:176][555]LogSlate: Took 0.003514 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.01.21-01.59.02:203][555]LogSlate: Took 0.003840 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.01.21-01.59.05:728][882]LogSlate: Took 0.003697 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.01.21-01.59.13:734][474]LogContentBrowser:Verbose: The majority of assets in the view are of type: Skeleton
+[2018.01.21-01.59.38:994][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_Jump'
+[2018.01.21-01.59.38:994][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_Jump' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.38:994][627]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt : Can't find file for asset. /Game/Mannequin/Animations/ThirdPerson_Jump
+[2018.01.21-01.59.38:994][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Loop'
+[2018.01.21-01.59.38:995][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Loop' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.38:995][627]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt : Can't find file for asset. /Game/Mannequin/Animations/ThirdPersonJump_Loop
+[2018.01.21-01.59.38:995][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Start'
+[2018.01.21-01.59.38:995][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Start' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.38:995][627]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt : Can't find file for asset. /Game/Mannequin/Animations/ThirdPersonJump_Start
+[2018.01.21-01.59.38:995][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D'
+[2018.01.21-01.59.38:995][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.38:995][627]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt : Can't find file for asset. /Game/Mannequin/Animations/ThirdPerson_IdleRun_2D
+[2018.01.21-01.59.38:997][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D'
+[2018.01.21-01.59.38:998][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.38:998][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_Jump'
+[2018.01.21-01.59.38:998][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_Jump' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.38:998][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Loop'
+[2018.01.21-01.59.38:998][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Loop' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.38:998][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Start'
+[2018.01.21-01.59.38:998][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Start' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.38:998][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.38:998][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.38:999][627]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.59.38:999][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.38:999][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.uasset.
+[2018.01.21-01.59.39:000][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.39:000][627]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPerson_AnimBP_C
+[2018.01.21-01.59.39:000][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading NULL.
+[2018.01.21-01.59.39:003][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_Jump'
+[2018.01.21-01.59.39:003][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_Jump' while loading NULL.
+[2018.01.21-01.59.39:003][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Loop'
+[2018.01.21-01.59.39:003][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Loop' while loading NULL.
+[2018.01.21-01.59.39:003][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Start'
+[2018.01.21-01.59.39:003][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Start' while loading NULL.
+[2018.01.21-01.59.39:003][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D'
+[2018.01.21-01.59.39:003][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D' while loading NULL.
+[2018.01.21-01.59.39:003][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D'
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D' while loading NULL.
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_Jump'
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_Jump' while loading NULL.
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Loop'
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Loop' while loading NULL.
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Start'
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Start' while loading NULL.
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading NULL.
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.39:004][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading NULL.
+[2018.01.21-01.59.39:005][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_Jump'
+[2018.01.21-01.59.39:005][627]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPerson_Jump.ThirdPerson_Jump Referenced by Default__ThirdPerson_AnimBP_C
+[2018.01.21-01.59.39:005][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_Jump' while loading NULL.
+[2018.01.21-01.59.39:005][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Loop'
+[2018.01.21-01.59.39:005][627]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPersonJump_Loop.ThirdPersonJump_Loop Referenced by Default__ThirdPerson_AnimBP_C
+[2018.01.21-01.59.39:005][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Loop' while loading NULL.
+[2018.01.21-01.59.39:005][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Start'
+[2018.01.21-01.59.39:005][627]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPersonJump_Start.ThirdPersonJump_Start Referenced by Default__ThirdPerson_AnimBP_C
+[2018.01.21-01.59.39:005][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Start' while loading NULL.
+[2018.01.21-01.59.39:006][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D'
+[2018.01.21-01.59.39:006][627]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPerson_IdleRun_2D.ThirdPerson_IdleRun_2D Referenced by Default__ThirdPerson_AnimBP_C
+[2018.01.21-01.59.39:006][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D' while loading NULL.
+[2018.01.21-01.59.39:006][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.39:006][627]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPerson_AnimBP
+[2018.01.21-01.59.39:006][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading NULL.
+[2018.01.21-01.59.39:011][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D'
+[2018.01.21-01.59.39:011][627]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPerson_IdleRun_2D.ThirdPerson_IdleRun_2D Referenced by AnimGraphNode_BlendSpacePlayer_9
+[2018.01.21-01.59.39:011][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_IdleRun_2D' while loading NULL.
+[2018.01.21-01.59.39:012][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Start'
+[2018.01.21-01.59.39:012][627]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPersonJump_Start.ThirdPersonJump_Start Referenced by AnimGraphNode_SequencePlayer_34
+[2018.01.21-01.59.39:013][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Start' while loading NULL.
+[2018.01.21-01.59.39:013][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonJump_Loop'
+[2018.01.21-01.59.39:013][627]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPersonJump_Loop.ThirdPersonJump_Loop Referenced by AnimGraphNode_SequencePlayer_40
+[2018.01.21-01.59.39:013][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonJump_Loop' while loading NULL.
+[2018.01.21-01.59.39:014][627]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_Jump'
+[2018.01.21-01.59.39:014][627]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPerson_Jump.ThirdPerson_Jump Referenced by AnimGraphNode_SequencePlayer_46
+[2018.01.21-01.59.39:014][627]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_Jump' while loading NULL.
+[2018.01.21-01.59.39:028][627]LogBlueprint:Error: [Compiler ThirdPerson_AnimBP] Error  ThirdPerson_AnimBP  - The skeleton asset for this animation Blueprint is missing, so it cannot be compiled!
+[2018.01.21-01.59.39:034][627]LogBlueprint:Warning: [Compiler ThirdPerson_AnimBP] Warning [0082.41] Compile of ThirdPerson_AnimBP failed. 1 Fatal Issue(s) 0 Warning(s) [in 10 ms] (/Game/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.ThirdPerson_AnimBP)
+[2018.01.21-01.59.39:034][627]LogBlueprint:Warning: [Compiler ThirdPerson_AnimBP] Warning [0082.41] Compile of ThirdPerson_AnimBP failed. 1 Fatal Issue(s) 1 Warning(s) [in 0 ms] (/Game/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.ThirdPerson_AnimBP)
+[2018.01.21-01.59.39:034][627]LogBlueprint:Warning: [Compiler ThirdPerson_AnimBP] Warning [0082.41] Compile of ThirdPerson_AnimBP failed. 1 Fatal Issue(s) 2 Warning(s) [in 0 ms] (/Game/Characters/Mannequin/Animations/ThirdPerson_AnimBPAlt.ThirdPerson_AnimBP)
+[2018.01.21-01.59.43:977][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.43:977][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_Jump.uasset.
+[2018.01.21-01.59.43:977][883]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_Jump : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.59.43:977][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.43:977][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_Jump.uasset.
+[2018.01.21-01.59.43:979][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonIdle'
+[2018.01.21-01.59.43:979][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonIdle' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset.
+[2018.01.21-01.59.43:979][883]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D : Can't find file for asset. /Game/Mannequin/Animations/ThirdPersonIdle
+[2018.01.21-01.59.43:979][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonRun'
+[2018.01.21-01.59.43:979][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonRun' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset.
+[2018.01.21-01.59.43:979][883]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D : Can't find file for asset. /Game/Mannequin/Animations/ThirdPersonRun
+[2018.01.21-01.59.43:980][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonWalk'
+[2018.01.21-01.59.43:980][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonWalk' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset.
+[2018.01.21-01.59.43:980][883]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D : Can't find file for asset. /Game/Mannequin/Animations/ThirdPersonWalk
+[2018.01.21-01.59.43:980][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonIdle'
+[2018.01.21-01.59.43:980][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonIdle' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset.
+[2018.01.21-01.59.43:980][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonRun'
+[2018.01.21-01.59.43:980][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonRun' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset.
+[2018.01.21-01.59.43:981][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonWalk'
+[2018.01.21-01.59.43:981][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonWalk' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset.
+[2018.01.21-01.59.43:981][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.43:981][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset.
+[2018.01.21-01.59.43:981][883]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-01.59.43:981][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.43:981][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset.
+[2018.01.21-01.59.44:003][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonIdle'
+[2018.01.21-01.59.44:003][883]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPersonIdle.ThirdPersonIdle Referenced by ThirdPerson_IdleRun_2D
+[2018.01.21-01.59.44:003][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonIdle' while loading NULL.
+[2018.01.21-01.59.44:003][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonWalk'
+[2018.01.21-01.59.44:003][883]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPersonWalk.ThirdPersonWalk Referenced by ThirdPerson_IdleRun_2D
+[2018.01.21-01.59.44:003][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonWalk' while loading NULL.
+[2018.01.21-01.59.44:003][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPersonRun'
+[2018.01.21-01.59.44:004][883]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPersonRun.ThirdPersonRun Referenced by ThirdPerson_IdleRun_2D
+[2018.01.21-01.59.44:004][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPersonRun' while loading NULL.
+[2018.01.21-01.59.44:004][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.44:004][883]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPerson_IdleRun_2D
+[2018.01.21-01.59.44:004][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading NULL.
+[2018.01.21-01.59.44:006][883]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-01.59.44:006][883]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPerson_Jump
+[2018.01.21-01.59.44:006][883]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading NULL.
+[2018.01.21-01.59.48:226][227]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2018.01.21-01.59.48:407][227]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_7:PersistentLevel.Actor_0.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2018.01.21-01.59.48:806][227]LogSlate: Took 0.000306 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.01.21-01.59.48:957][227]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0013 seconds. Added 112 classes and 0 folders.
+[2018.01.21-01.59.49:766][227]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_7:PersistentLevel.Actor_0.DebugSkelMeshComponent_2) - call TermArticulated first.
+[2018.01.21-01.59.50:078][227]LogSlate: Took 0.000372 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.01.21-01.59.50:168][227]LogContentBrowser: Native class hierarchy updated for 'ClothingSystemEditorInterface' in 0.0007 seconds. Added 1 classes and 0 folders.
+[2018.01.21-01.59.54:119][441]LogSlate: Took 0.000410 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.01.21-02.00.05:248][877]LogContentBrowser:Verbose: The majority of assets in the view are of type: Skeleton
+[2018.01.21-02.00.07:158][974]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_12:PersistentLevel.Actor_1.DebugSkelMeshComponent_6) Already registered. Aborting.
+[2018.01.21-02.00.07:204][974]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_12:PersistentLevel.Actor_1.DebugSkelMeshComponent_6) - call TermArticulated first.
+[2018.01.21-02.00.12:448][173]LogContentBrowser:Verbose: The majority of assets in the view are of type: Skeleton
+[2018.01.21-02.00.58:518][890]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-02.00.58:518][890]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonIdle.uasset.
+[2018.01.21-02.00.58:518][890]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPersonIdle : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-02.00.58:518][890]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-02.00.58:518][890]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonIdle.uasset.
+[2018.01.21-02.00.58:520][890]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-02.00.58:520][890]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPersonIdle
+[2018.01.21-02.00.58:520][890]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading NULL.
+[2018.01.21-02.01.02:410][ 65]LogContentBrowser:Verbose: The majority of assets in the view are of type: Skeleton
+[2018.01.21-02.01.14:700][784]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_21:PersistentLevel.Actor_2.DebugSkelMeshComponent_15) Already registered. Aborting.
+[2018.01.21-02.01.14:748][784]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_21:PersistentLevel.Actor_2.DebugSkelMeshComponent_15) - call TermArticulated first.
+[2018.01.21-02.01.36:595][177]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-02.01.36:595][177]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonWalk.uasset.
+[2018.01.21-02.01.36:596][177]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPersonWalk : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-02.01.36:596][177]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-02.01.36:596][177]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonWalk.uasset.
+[2018.01.21-02.01.36:599][177]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-02.01.36:599][177]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPersonWalk
+[2018.01.21-02.01.36:600][177]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading NULL.
+[2018.01.21-02.01.39:112][251]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-02.01.39:113][251]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonRun.uasset.
+[2018.01.21-02.01.39:113][251]LoadErrors:Error: Error /Game/Characters/Mannequin/Animations/ThirdPersonRun : Can't find file for asset. /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton
+[2018.01.21-02.01.39:114][251]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-02.01.39:114][251]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonRun.uasset.
+[2018.01.21-02.01.39:117][251]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton'
+[2018.01.21-02.01.39:118][251]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton Referenced by ThirdPersonRun
+[2018.01.21-02.01.39:118][251]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton' while loading NULL.
+[2018.01.21-02.01.44:877][384]LogContentBrowser:Verbose: The majority of assets in the view are of type: Skeleton
+[2018.01.21-02.01.49:360][700]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_25:PersistentLevel.Actor_3.DebugSkelMeshComponent_19) Already registered. Aborting.
+[2018.01.21-02.01.49:409][700]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_25:PersistentLevel.Actor_3.DebugSkelMeshComponent_19) - call TermArticulated first.
+[2018.01.21-02.02.01:514][535]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.02.01:708][535]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.02.01:708][535]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.02.01:708][535]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:02:01)
+[2018.01.21-02.02.01:708][535]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.02.01:749][535]LogPlayLevel: PIE: StaticDuplicateObject took: (0.040583s)
+[2018.01.21-02.02.01:751][535]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.02.01:752][535]LogPlayLevel: PIE: World Init took: (0.002077s)
+[2018.01.21-02.02.01:752][535]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.043098s)
+[2018.01.21-02.02.01:810][535]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.02.01:823][535]LogInit: FAudioDevice initialized.
+[2018.01.21-02.02.01:880][535]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.02.01:884][535]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.02.01
+[2018.01.21-02.02.01:885][535]LogWorld: Bringing up level for play took: 0.003326
+[2018.01.21-02.02.01:944][535]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0008 seconds. Added 11 classes and 0 folders.
+[2018.01.21-02.02.01:950][535]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.281
+[2018.01.21-02.02.01:951][535]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.02.01:987][535]LogRenderer: Reallocating scene render targets to support 1124x656 NumSamples 1 (Frame:1).
+[2018.01.21-02.02.03:977][736]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.02.04:033][736]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.02.25:304][206]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (EditorCube20)
+[2018.01.21-02.02.27:430][390]LogEditorViewport: Clicking on Actor (LMB): Player_Base_C (Player_Base)
+[2018.01.21-02.02.33:682][893]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.02.38:600][377]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.02.38:629][377]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.02.38:629][377]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.01.21-02.02.38:629][377]LogPlayLevel: [PlayLevel] Compiling Player_Base before play...
+[2018.01.21-02.02.38:696][377]LogPlayLevel: [PlayLevel]   Compiling CharacterAnimationBP as a dependent...
+[2018.01.21-02.02.39:347][377]LogPlayLevel: PlayLevel: Blueprint regeneration took 718 ms (2 blueprints)
+[2018.01.21-02.02.39:347][377]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:02:39)
+[2018.01.21-02.02.39:347][377]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.02.39:372][377]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024579s)
+[2018.01.21-02.02.39:373][377]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.02.39:373][377]LogPlayLevel: PIE: World Init took: (0.001308s)
+[2018.01.21-02.02.39:374][377]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026268s)
+[2018.01.21-02.02.39:442][377]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.02.39:454][377]LogInit: FAudioDevice initialized.
+[2018.01.21-02.02.39:496][377]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.02.39:500][377]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.02.39
+[2018.01.21-02.02.39:500][377]LogWorld: Bringing up level for play took: 0.002938
+[2018.01.21-02.02.39:505][377]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 1.274
+[2018.01.21-02.02.39:506][377]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.02.55:061][ 59]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.02.55:174][ 59]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.03.01:154][638]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.03.03:530][871]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.03.03:564][871]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.03.03:565][871]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.01.21-02.03.03:565][871]LogPlayLevel: [PlayLevel] Compiling Player_Base before play...
+[2018.01.21-02.03.03:627][871]LogPlayLevel: [PlayLevel]   Compiling CharacterAnimationBP as a dependent...
+[2018.01.21-02.03.04:269][871]LogPlayLevel: PlayLevel: Blueprint regeneration took 704 ms (2 blueprints)
+[2018.01.21-02.03.04:269][871]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:03:04)
+[2018.01.21-02.03.04:269][871]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.03.04:291][871]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021947s)
+[2018.01.21-02.03.04:293][871]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.03.04:294][871]LogPlayLevel: PIE: World Init took: (0.002100s)
+[2018.01.21-02.03.04:294][871]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.024770s)
+[2018.01.21-02.03.04:355][871]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.03.04:368][871]LogInit: FAudioDevice initialized.
+[2018.01.21-02.03.04:408][871]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.03.04:413][871]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.03.04
+[2018.01.21-02.03.04:414][871]LogWorld: Bringing up level for play took: 0.003189
+[2018.01.21-02.03.04:418][871]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.187
+[2018.01.21-02.03.04:418][871]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.03.13:163][810]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.03.13:277][810]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.03.23:111][626]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_30:PersistentLevel.Actor_4.DebugSkelMeshComponent_21) Already registered. Aborting.
+[2018.01.21-02.03.23:166][626]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_30:PersistentLevel.Actor_4.DebugSkelMeshComponent_21) - call TermArticulated first.
+[2018.01.21-02.03.28:928][913]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_33:PersistentLevel.Actor_5.DebugSkelMeshComponent_23) Already registered. Aborting.
+[2018.01.21-02.03.29:211][913]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_33:PersistentLevel.Actor_5.DebugSkelMeshComponent_23) - call TermArticulated first.
+[2018.01.21-02.04.27:170][539]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_35:PersistentLevel.Actor_6.DebugSkelMeshComponent_25) Already registered. Aborting.
+[2018.01.21-02.04.27:215][539]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_35:PersistentLevel.Actor_6.DebugSkelMeshComponent_25) - call TermArticulated first.
+[2018.01.21-02.04.34:898][957]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.Actor_7.DebugSkelMeshComponent_27) Already registered. Aborting.
+[2018.01.21-02.04.34:944][957]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_37:PersistentLevel.Actor_7.DebugSkelMeshComponent_27) - call TermArticulated first.
+[2018.01.21-02.05.23:376][ 82]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.05.23:411][ 82]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.05.23:411][ 82]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.05.23:411][ 82]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:05:23)
+[2018.01.21-02.05.23:411][ 82]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.05.23:437][ 82]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025783s)
+[2018.01.21-02.05.23:438][ 82]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.05.23:438][ 82]LogPlayLevel: PIE: World Init took: (0.001490s)
+[2018.01.21-02.05.23:439][ 82]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.027718s)
+[2018.01.21-02.05.23:511][ 82]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.05.23:524][ 82]LogInit: FAudioDevice initialized.
+[2018.01.21-02.05.23:570][ 82]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.05.23:575][ 82]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.05.23
+[2018.01.21-02.05.23:575][ 82]LogWorld: Bringing up level for play took: 0.002964
+[2018.01.21-02.05.23:583][ 82]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.648
+[2018.01.21-02.05.23:584][ 82]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.05.36:565][107]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.05.36:809][107]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.06.02:192][546]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.06.02:218][546]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.06.02:218][546]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.06.02:218][546]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:06:02)
+[2018.01.21-02.06.02:218][546]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.06.02:243][546]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025023s)
+[2018.01.21-02.06.02:245][546]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.06.02:245][546]LogPlayLevel: PIE: World Init took: (0.001370s)
+[2018.01.21-02.06.02:245][546]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026762s)
+[2018.01.21-02.06.02:321][546]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.06.02:333][546]LogInit: FAudioDevice initialized.
+[2018.01.21-02.06.02:369][546]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.06.02:374][546]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.06.02
+[2018.01.21-02.06.02:374][546]LogWorld: Bringing up level for play took: 0.003008
+[2018.01.21-02.06.02:378][546]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.146
+[2018.01.21-02.06.02:378][546]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.06.12:635][769]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.06.12:751][769]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.06.36:900][453]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.06.36:925][453]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.06.36:925][453]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.06.36:925][453]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:06:36)
+[2018.01.21-02.06.36:925][453]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.06.36:951][453]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025137s)
+[2018.01.21-02.06.36:952][453]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.06.36:952][453]LogPlayLevel: PIE: World Init took: (0.001423s)
+[2018.01.21-02.06.36:952][453]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026957s)
+[2018.01.21-02.06.37:027][453]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.06.37:039][453]LogInit: FAudioDevice initialized.
+[2018.01.21-02.06.37:081][453]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.06.37:086][453]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.06.37
+[2018.01.21-02.06.37:087][453]LogWorld: Bringing up level for play took: 0.003151
+[2018.01.21-02.06.37:090][453]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.859
+[2018.01.21-02.06.37:091][453]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.06.42:002][ 34]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.06.42:112][ 34]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.07.13:478][687]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.07.13:504][687]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.07.13:504][687]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.07.13:504][687]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:07:13)
+[2018.01.21-02.07.13:504][687]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.07.13:527][687]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022881s)
+[2018.01.21-02.07.13:528][687]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.07.13:528][687]LogPlayLevel: PIE: World Init took: (0.001193s)
+[2018.01.21-02.07.13:529][687]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.024436s)
+[2018.01.21-02.07.13:600][687]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.07.13:615][687]LogInit: FAudioDevice initialized.
+[2018.01.21-02.07.13:659][687]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.07.13:664][687]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.07.13
+[2018.01.21-02.07.13:664][687]LogWorld: Bringing up level for play took: 0.003846
+[2018.01.21-02.07.13:670][687]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.561
+[2018.01.21-02.07.13:670][687]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.07.16:188][915]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.07.16:301][915]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.08.57:031][147]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.09.28:662][387]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.09.28:698][387]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.09.28:698][387]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.09.28:698][387]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:09:28)
+[2018.01.21-02.09.28:698][387]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.09.28:727][387]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028890s)
+[2018.01.21-02.09.28:728][387]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.09.28:728][387]LogPlayLevel: PIE: World Init took: (0.001451s)
+[2018.01.21-02.09.28:729][387]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.030808s)
+[2018.01.21-02.09.28:802][387]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.09.28:815][387]LogInit: FAudioDevice initialized.
+[2018.01.21-02.09.28:857][387]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.09.28:862][387]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.09.28
+[2018.01.21-02.09.28:862][387]LogWorld: Bringing up level for play took: 0.003553
+[2018.01.21-02.09.28:866][387]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.635
+[2018.01.21-02.09.28:867][387]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.09.45:691][565]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.09.45:802][565]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.09.56:204][493]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.09.56:321][493]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.09.56:321][493]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.01.21-02.09.56:321][493]LogPlayLevel: [PlayLevel] Compiling Player_Base before play...
+[2018.01.21-02.09.56:360][493]LogPlayLevel: [PlayLevel]   Compiling CharacterAnimationBP as a dependent...
+[2018.01.21-02.09.57:059][493]LogPlayLevel: PlayLevel: Blueprint regeneration took 737 ms (2 blueprints)
+[2018.01.21-02.09.57:059][493]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:09:57)
+[2018.01.21-02.09.57:059][493]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.09.57:084][493]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024927s)
+[2018.01.21-02.09.57:086][493]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.09.57:086][493]LogPlayLevel: PIE: World Init took: (0.001501s)
+[2018.01.21-02.09.57:086][493]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026856s)
+[2018.01.21-02.09.57:158][493]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.09.57:171][493]LogInit: FAudioDevice initialized.
+[2018.01.21-02.09.57:211][493]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.09.57:216][493]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.09.57
+[2018.01.21-02.09.57:216][493]LogWorld: Bringing up level for play took: 0.003343
+[2018.01.21-02.09.57:223][493]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.991
+[2018.01.21-02.09.57:223][493]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.10.00:583][642]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.10.00:838][642]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.03:209][102]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.11.05:435][363]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.11.05:438][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_AnimBP'
+[2018.01.21-02.11.05:438][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_AnimBP' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/ThirdPersonCharacter.uasset.
+[2018.01.21-02.11.05:438][363]LoadErrors:Error: Error /Game/ThirdPersonBP/ThirdPersonCharacter : Can't find file for asset. /Game/Mannequin/Animations/ThirdPerson_AnimBP
+[2018.01.21-02.11.05:441][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_AnimBP'
+[2018.01.21-02.11.05:441][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_AnimBP' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/ThirdPersonCharacter.uasset.
+[2018.01.21-02.11.05:442][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/SK_Mannequin'
+[2018.01.21-02.11.05:442][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/SK_Mannequin' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/ThirdPersonCharacter.uasset.
+[2018.01.21-02.11.05:442][363]LoadErrors:Error: Error /Game/ThirdPersonBP/ThirdPersonCharacter : Can't find file for asset. /Game/Mannequin/Character/Mesh/SK_Mannequin
+[2018.01.21-02.11.05:442][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/SK_Mannequin'
+[2018.01.21-02.11.05:442][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/SK_Mannequin' while loading G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/ThirdPersonCharacter.uasset.
+[2018.01.21-02.11.05:446][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_AnimBP'
+[2018.01.21-02.11.05:446][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_AnimBP' while loading NULL.
+[2018.01.21-02.11.05:447][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_AnimBP'
+[2018.01.21-02.11.05:447][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_AnimBP' while loading NULL.
+[2018.01.21-02.11.05:447][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/SK_Mannequin'
+[2018.01.21-02.11.05:447][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/SK_Mannequin' while loading NULL.
+[2018.01.21-02.11.05:447][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/SK_Mannequin'
+[2018.01.21-02.11.05:447][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/SK_Mannequin' while loading NULL.
+[2018.01.21-02.11.05:448][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_AnimBP'
+[2018.01.21-02.11.05:448][363]LoadErrors: Info Failed to load /Game/Mannequin/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C Referenced by Default__ThirdPersonCharacter_C
+[2018.01.21-02.11.05:448][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_AnimBP' while loading NULL.
+[2018.01.21-02.11.05:448][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Animations/ThirdPerson_AnimBP'
+[2018.01.21-02.11.05:448][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Animations/ThirdPerson_AnimBP' while loading NULL.
+[2018.01.21-02.11.05:449][363]LogLinker:Warning: Can't find file '/Game/Mannequin/Character/Mesh/SK_Mannequin'
+[2018.01.21-02.11.05:449][363]LoadErrors: Info Failed to load /Game/Mannequin/Character/Mesh/SK_Mannequin.SK_Mannequin Referenced by Default__ThirdPersonCharacter_C
+[2018.01.21-02.11.05:449][363]LogLinker:Warning: Can't find file for asset '/Game/Mannequin/Character/Mesh/SK_Mannequin' while loading NULL.
+[2018.01.21-02.11.05:464][363]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2018.01.21-02.11.05:470][363]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0768.85] Compile of ThirdPersonCharacter successful, but with 1 Warning(s) [in 10 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.11.05:470][363]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0768.85] Compile of ThirdPersonCharacter successful, but with 2 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.11.05:470][363]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0768.85] Compile of ThirdPersonCharacter successful, but with 3 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.11.05:478][363]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2018.01.21-02.11.05:484][363]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0768.86] Compile of ThirdPersonCharacter successful, but with 1 Warning(s) [in 10 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.11.05:484][363]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0768.86] Compile of ThirdPersonCharacter successful, but with 2 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.11.05:484][363]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0768.86] Compile of ThirdPersonCharacter successful, but with 3 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.11.06:305][458]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.11.06:345][458]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.06:345][458]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.01.21-02.11.06:345][458]LogPlayLevel: [PlayLevel] Compiling Player_Base before play...
+[2018.01.21-02.11.06:376][458]LogPlayLevel: [PlayLevel]   Compiling CharacterAnimationBP as a dependent...
+[2018.01.21-02.11.06:881][458]LogPlayLevel: PlayLevel: Blueprint regeneration took 536 ms (2 blueprints)
+[2018.01.21-02.11.06:881][458]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:11:06)
+[2018.01.21-02.11.06:882][458]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.11.06:934][458]LogPlayLevel: PIE: StaticDuplicateObject took: (0.052123s)
+[2018.01.21-02.11.06:937][458]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.11.06:938][458]LogPlayLevel: PIE: World Init took: (0.003725s)
+[2018.01.21-02.11.06:939][458]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.057037s)
+[2018.01.21-02.11.07:085][458]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.11.07:126][458]LogInit: FAudioDevice initialized.
+[2018.01.21-02.11.07:188][458]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.11.07:200][458]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.11.07
+[2018.01.21-02.11.07:202][458]LogWorld: Bringing up level for play took: 0.008903
+[2018.01.21-02.11.07:209][458]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.978
+[2018.01.21-02.11.07:210][458]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.16:648][244]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.16:761][244]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.21:941][771]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Box)
+[2018.01.21-02.11.22:691][824]LogEditorViewport: Clicking on Actor (LMB): Player_Base_C (Player_Base)
+[2018.01.21-02.11.23:181][854]Cmd: DELETE
+[2018.01.21-02.11.23:181][854]Cmd: ACTOR DELETE
+[2018.01.21-02.11.23:182][854]LogEditorActor: Deleted Actor: Player_Base_C
+[2018.01.21-02.11.23:242][854]LogEditorActor: Deleted 1 Actors (0.061 secs)
+[2018.01.21-02.11.24:532][  6]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Box)
+[2018.01.21-02.11.24:709][ 17]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.11.24:742][ 17]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.24:742][ 17]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.11.24:742][ 17]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:11:24)
+[2018.01.21-02.11.24:742][ 17]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.11.24:770][ 17]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028045s)
+[2018.01.21-02.11.24:772][ 17]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.11.24:772][ 17]LogPlayLevel: PIE: World Init took: (0.001559s)
+[2018.01.21-02.11.24:772][ 17]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.030080s)
+[2018.01.21-02.11.24:820][ 17]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.11.24:833][ 17]LogInit: FAudioDevice initialized.
+[2018.01.21-02.11.24:879][ 17]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.11.24:882][ 17]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.11.24
+[2018.01.21-02.11.24:883][ 17]LogWorld: Bringing up level for play took: 0.001913
+[2018.01.21-02.11.24:890][ 17]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.659
+[2018.01.21-02.11.24:890][ 17]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.28:394][376]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.28:475][376]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.31:754][635]LogRenderer: Reallocating scene render targets to support 1124x696 NumSamples 1 (Frame:1).
+[2018.01.21-02.11.36:907][222]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.11.43:773][710]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.11.46:243][799]BlueprintLog: New page: Compile ThirdPersonCharacter
+[2018.01.21-02.11.46:317][799]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2018.01.21-02.11.47:439][799]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2018.01.21-02.11.47:440][799]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0810.82] Compile of ThirdPersonCharacter successful, but with 1 Warning(s) [in 1,196 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.11.52:253][275]BlueprintLog: New page: Compile ThirdPersonCharacter
+[2018.01.21-02.11.52:275][275]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2018.01.21-02.11.52:430][275]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2018.01.21-02.11.52:431][275]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0815.81] Compile of ThirdPersonCharacter successful, but with 1 Warning(s) [in 177 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.11.53:999][458]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.11.54:032][458]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.11.54:032][458]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.11.54:033][458]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:11:54)
+[2018.01.21-02.11.54:033][458]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.11.54:060][458]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027640s)
+[2018.01.21-02.11.54:062][458]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.11.54:062][458]LogPlayLevel: PIE: World Init took: (0.001785s)
+[2018.01.21-02.11.54:063][458]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.030426s)
+[2018.01.21-02.11.54:111][458]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.11.54:125][458]LogInit: FAudioDevice initialized.
+[2018.01.21-02.11.54:170][458]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.11.54:174][458]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.11.54
+[2018.01.21-02.11.54:174][458]LogWorld: Bringing up level for play took: 0.001928
+[2018.01.21-02.11.54:180][458]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.052
+[2018.01.21-02.11.54:180][458]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.12.03:028][502]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.12.03:106][502]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.12.17:187][550]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.12.19:123][618]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.12.19:204][618]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.12.19:204][618]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.01.21-02.12.19:204][618]LogPlayLevel: [PlayLevel] Compiling ThirdPersonCharacter before play...
+[2018.01.21-02.12.19:267][618]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2018.01.21-02.12.19:389][618]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0842.77] Compile of ThirdPersonCharacter successful, but with 1 Warning(s) [in 146 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.12.19:390][618]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0842.77] Compile of ThirdPersonCharacter successful, but with 2 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.12.19:390][618]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0842.77] Compile of ThirdPersonCharacter successful, but with 3 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.12.20:295][618]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0843.67] Compile of ThirdPersonCharacter successful, but with 4 Warning(s) [in 905 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.12.20:317][618]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0843.69] Compile of ThirdPersonCharacter successful, but with 5 Warning(s) [in 22 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.12.20:318][618]LogBlueprint:Warning: [Compiler ThirdPersonCharacter] Warning [0843.70] Compile of ThirdPersonCharacter successful, but with 6 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/ThirdPersonCharacter.ThirdPersonCharacter)
+[2018.01.21-02.12.20:401][618]LogPlayLevel: PlayLevel: Blueprint regeneration took 1197 ms (1 blueprints)
+[2018.01.21-02.12.20:402][618]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:12:20)
+[2018.01.21-02.12.20:402][618]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.12.20:450][618]LogPlayLevel: PIE: StaticDuplicateObject took: (0.047485s)
+[2018.01.21-02.12.20:452][618]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.12.20:452][618]LogPlayLevel: PIE: World Init took: (0.002492s)
+[2018.01.21-02.12.20:453][618]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.050768s)
+[2018.01.21-02.12.20:565][618]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.12.20:604][618]LogInit: FAudioDevice initialized.
+[2018.01.21-02.12.20:683][618]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.12.20:693][618]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.12.20
+[2018.01.21-02.12.20:694][618]LogWorld: Bringing up level for play took: 0.005834
+[2018.01.21-02.12.20:710][618]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 2.479
+[2018.01.21-02.12.20:711][618]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.12.23:444][836]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.12.23:525][836]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.12.24:420][938]LogEditorTransaction: Undo Edit Anim Class
+[2018.01.21-02.12.24:425][938]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_43:PersistentLevel.ThirdPersonCharacter_C_17.CollisionCylinder) Component already registered.
+[2018.01.21-02.12.24:560][938]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_33:PersistentLevel.Actor_5.DebugSkelMeshComponent_23) Already registered. Aborting.
+[2018.01.21-02.12.46:897][743]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2018.01.21-02.12.46:985][743]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2018.01.21-02.12.47:734][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_Player_Base_C_0' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:734][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'SimpleConstructionScript_0' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:734][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'CameraComponent_0__CCE3C0B4' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:734][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'SceneComponent_0' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:734][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'SpringArmComponent_0__A9892D03' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:734][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'GunSocket_GEN_VARIABLE' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:734][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_Player_Base_C_1' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:734][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InputActionDelegateBinding_5' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InputAxisDelegateBinding_10' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'UberGraphFrame' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'UserConstructionScript' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpActEvt_Jump_K2Node_InputActionEvent_11' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpActEvt_Jump_K2Node_InputActionEvent_10' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_LookUp_K2Node_InputAxisEvent_40' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_Turn_K2Node_InputAxisEvent_47' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_MoveForward_K2Node_InputAxisEvent_79' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_MoveRight_K2Node_InputAxisEvent_90' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_TurnRate_K2Node_InputAxisEvent_38' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_LookUpRate_K2Node_InputAxisEvent_53' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_Player_Base_C_84' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'ExecuteUbergraph_Player_Base' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpActEvt_Jump_K2Node_InputActionEvent_11' or package '/Game/ThirdPersonBP/Player_Base'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpActEvt_Jump_K2Node_InputActionEvent_10' or package '/Game/ThirdPersonBP/Player_Base'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_LookUp_K2Node_InputAxisEvent_40' or package '/Game/ThirdPersonBP/Player_Base'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_Turn_K2Node_InputAxisEvent_47' or package '/Game/ThirdPersonBP/Player_Base'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_MoveForward_K2Node_InputAxisEvent_79' or package '/Game/ThirdPersonBP/Player_Base'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_MoveRight_K2Node_InputAxisEvent_90' or package '/Game/ThirdPersonBP/Player_Base'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_TurnRate_K2Node_InputAxisEvent_38' or package '/Game/ThirdPersonBP/Player_Base'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'InpAxisEvt_LookUpRate_K2Node_InputAxisEvent_53' or package '/Game/ThirdPersonBP/Player_Base'.
+[2018.01.21-02.12.47:735][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'GunSocket' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'FollowCamera' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'CameraBoom' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'BaseTurnRate' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'BaseLookUpRate' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'isShooting' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'isDead' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'isAiming' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_Player_Base_C_63' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_Player_Base_C_43' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_Player_Base_C_53' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_Player_Base_C_83' or package '/Engine/Transient'.
+[2018.01.21-02.12.47:736][743]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_Player_Base_C_48' or package '/Engine/Transient'.
+[2018.01.21-02.12.52:002][ 36]LogBlueprint:Warning: [Compiler PlayerBase] Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2018.01.21-02.12.52:025][ 36]LogBlueprint:Warning: [Compiler PlayerBase] Warning [0875.40] Compile of PlayerBase successful, but with 1 Warning(s) [in 84 ms] (/Game/ThirdPersonBP/PlayerBase.PlayerBase)
+[2018.01.21-02.12.52:119][ 36]LogBlueprint:Warning: [Compiler PlayerBase] Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2018.01.21-02.12.52:140][ 36]LogBlueprint:Warning: [Compiler PlayerBase] Warning [0875.52] Compile of PlayerBase successful, but with 1 Warning(s) [in 75 ms] (/Game/ThirdPersonBP/PlayerBase.PlayerBase)
+[2018.01.21-02.12.52:140][ 36]LogBlueprint:Warning: [Compiler PlayerBase] Warning [0875.52] Compile of PlayerBase successful, but with 2 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/PlayerBase.PlayerBase)
+[2018.01.21-02.12.52:140][ 36]LogBlueprint:Warning: [Compiler PlayerBase] Warning [0875.52] Compile of PlayerBase successful, but with 3 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/PlayerBase.PlayerBase)
+[2018.01.21-02.12.52:439][ 36]LogBlueprint:Warning: [Compiler PlayerBase] Warning [0875.82] Compile of PlayerBase successful, but with 4 Warning(s) [in 298 ms] (/Game/ThirdPersonBP/PlayerBase.PlayerBase)
+[2018.01.21-02.12.52:440][ 36]LogBlueprint:Warning: [Compiler PlayerBase] Warning [0875.82] Compile of PlayerBase successful, but with 5 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/PlayerBase.PlayerBase)
+[2018.01.21-02.12.52:440][ 36]LogBlueprint:Warning: [Compiler PlayerBase] Warning [0875.82] Compile of PlayerBase successful, but with 6 Warning(s) [in 0 ms] (/Game/ThirdPersonBP/PlayerBase.PlayerBase)
+[2018.01.21-02.13.06:072][530]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.13.09:323][734]BlueprintLog: New page: Compile PlayerBase
+[2018.01.21-02.13.15:574][247]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.01.21-02.13.20:322][797]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.13.20:361][797]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.13.20:361][797]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.13.20:361][797]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:13:20)
+[2018.01.21-02.13.20:361][797]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.13.20:385][797]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023697s)
+[2018.01.21-02.13.20:386][797]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.13.20:386][797]LogPlayLevel: PIE: World Init took: (0.001390s)
+[2018.01.21-02.13.20:387][797]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.025542s)
+[2018.01.21-02.13.20:429][797]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.13.20:442][797]LogInit: FAudioDevice initialized.
+[2018.01.21-02.13.20:490][797]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.13.20:494][797]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.13.20
+[2018.01.21-02.13.20:494][797]LogWorld: Bringing up level for play took: 0.002488
+[2018.01.21-02.13.20:503][797]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.272
+[2018.01.21-02.13.20:503][797]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.13.34:016][545]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.13.34:099][545]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.13.57:353][600]BlueprintLog: New page: Compile PlayerBase
+[2018.01.21-02.14.00:408][915]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.14.00:439][915]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.14.00:439][915]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.14.00:439][915]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:14:00)
+[2018.01.21-02.14.00:439][915]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.14.00:461][915]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021757s)
+[2018.01.21-02.14.00:462][915]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.14.00:462][915]LogPlayLevel: PIE: World Init took: (0.001150s)
+[2018.01.21-02.14.00:463][915]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.023248s)
+[2018.01.21-02.14.00:504][915]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.14.00:518][915]LogInit: FAudioDevice initialized.
+[2018.01.21-02.14.00:562][915]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.14.00:567][915]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.14.00
+[2018.01.21-02.14.00:567][915]LogWorld: Bringing up level for play took: 0.002764
+[2018.01.21-02.14.00:572][915]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.341
+[2018.01.21-02.14.00:572][915]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.14.09:933][367]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.14.10:094][367]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.14.47:781][305]BlueprintLog: New page: Compile PlayerBase
+[2018.01.21-02.14.49:469][386]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Box)
+[2018.01.21-02.14.50:157][444]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2018.01.21-02.14.50:188][444]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.14.50:188][444]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.21-02.14.50:188][444]PIE: New page: PIE session: FirstPersonExampleMap (21 Jan 2018 02:14:50)
+[2018.01.21-02.14.50:188][444]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.01.21-02.14.50:213][444]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024944s)
+[2018.01.21-02.14.50:214][444]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.01.21-02.14.50:215][444]LogPlayLevel: PIE: World Init took: (0.001566s)
+[2018.01.21-02.14.50:215][444]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026979s)
+[2018.01.21-02.14.50:262][444]LogInit: XAudio2 using 'Speakers (Front and Back of PC) (VIA HD Audio(Win 10))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.01.21-02.14.50:274][444]LogInit: FAudioDevice initialized.
+[2018.01.21-02.14.50:318][444]LogLoad: Game class is 'Mode_BLGameplay_C'
+[2018.01.21-02.14.50:323][444]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.01.21-02.14.50
+[2018.01.21-02.14.50:324][444]LogWorld: Bringing up level for play took: 0.003909
+[2018.01.21-02.14.50:331][444]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.099
+[2018.01.21-02.14.50:331][444]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.14.59:653][392]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.14.59:735][392]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.01.21-02.15.08:138][216]LogEditorViewport: Clicking on Actor (LMB): PlayerBase_C (PlayerBase)
+[2018.01.21-02.15.08:883][269]Cmd: DELETE
+[2018.01.21-02.15.08:883][269]Cmd: ACTOR DELETE
+[2018.01.21-02.15.08:883][269]LogEditorActor: Deleted Actor: PlayerBase_C
+[2018.01.21-02.15.08:936][269]LogEditorActor: Deleted 1 Actors (0.053 secs)
+[2018.01.21-02.15.12:548][383]LogSavePackage: Save=1356.85ms
+[2018.01.21-02.15.12:548][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/CharacterAnimationBPB0AA68E3473FB79AD06B61A4C4EB80E4.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/CharacterAnimationBP.uasset'
+[2018.01.21-02.15.12:565][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/CharacterAnimationBP.uasset
+[2018.01.21-02.15.12:729][383]LogSavePackage: Save=72.42ms
+[2018.01.21-02.15.12:730][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/Default_Movement_Hip0FE5607543DE62700EE482ABFF372352.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/Default_Movement_Hip.uasset'
+[2018.01.21-02.15.12:745][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/Default_Movement_Hip.uasset
+[2018.01.21-02.15.12:884][383]LogSavePackage: Save=54.47ms
+[2018.01.21-02.15.12:884][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/ThirdPerson_IdleRun_2D5BBECC5D4045D52B5C5D33B0E35C8F50.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset'
+[2018.01.21-02.15.12:900][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset
+[2018.01.21-02.15.12:958][383]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/Mannequin/Animations/ThirdPerson_Jump" FILE="G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_Jump.uasset" SILENT=true
+[2018.01.21-02.15.13:052][383]LogSavePackage: Save=65.77ms
+[2018.01.21-02.15.13:052][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/ThirdPerson_Jump6E0DD714482D0B26006BE6A07D54F54C.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_Jump.uasset'
+[2018.01.21-02.15.13:068][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPerson_Jump.uasset
+[2018.01.21-02.15.13:140][383]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/Mannequin/Animations/ThirdPersonIdle" FILE="G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonIdle.uasset" SILENT=true
+[2018.01.21-02.15.13:239][383]LogSavePackage: Save=68.11ms
+[2018.01.21-02.15.13:239][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/ThirdPersonIdle2E4DA4E545684B836603CA8358D64EBC.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonIdle.uasset'
+[2018.01.21-02.15.13:255][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonIdle.uasset
+[2018.01.21-02.15.13:407][383]LogSavePackage: Save=64.78ms
+[2018.01.21-02.15.13:407][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/ThirdPersonJump_End41A82A30414BFB0DC96BF8BCE7A7DD43.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_End.uasset'
+[2018.01.21-02.15.13:424][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_End.uasset
+[2018.01.21-02.15.13:587][383]LogSavePackage: Save=73.56ms
+[2018.01.21-02.15.13:587][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/ThirdPersonJump_LoopC83A77F44F28B2612317DB974E5B2F6E.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_Loop.uasset'
+[2018.01.21-02.15.13:604][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_Loop.uasset
+[2018.01.21-02.15.13:782][383]LogSavePackage: Save=91.54ms
+[2018.01.21-02.15.13:782][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/ThirdPersonJump_StartCDDF1CC24ADA021F34A8E4BD37E3A7A2.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_Start.uasset'
+[2018.01.21-02.15.13:799][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonJump_Start.uasset
+[2018.01.21-02.15.13:852][383]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/Mannequin/Animations/ThirdPersonRun" FILE="G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonRun.uasset" SILENT=true
+[2018.01.21-02.15.13:952][383]LogSavePackage: Save=68.54ms
+[2018.01.21-02.15.13:952][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/ThirdPersonRun2AADD4294AEC5654C4F4988DAF146308.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonRun.uasset'
+[2018.01.21-02.15.13:968][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonRun.uasset
+[2018.01.21-02.15.14:027][383]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/Mannequin/Animations/ThirdPersonWalk" FILE="G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonWalk.uasset" SILENT=true
+[2018.01.21-02.15.14:141][383]LogSavePackage: Save=78.04ms
+[2018.01.21-02.15.14:141][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/ThirdPersonWalk6996A50D416342434B66199DF4C0A4A0.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonWalk.uasset'
+[2018.01.21-02.15.14:158][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Characters/Mannequin/Animations/ThirdPersonWalk.uasset
+[2018.01.21-02.15.14:167][383]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Core/Blueprints/Mode_BLGameplay" FILE="G:/Uni/Journeyman/Base/Borderlandsy/Content/Core/Blueprints/Mode_BLGameplay.uasset" SILENT=true
+[2018.01.21-02.15.14:230][383]LogSavePackage: Save=38.76ms
+[2018.01.21-02.15.14:230][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/Mode_BLGameplay2BA2E55B4A3671EA82B1C3990F1A2F8A.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/Core/Blueprints/Mode_BLGameplay.uasset'
+[2018.01.21-02.15.14:247][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/Core/Blueprints/Mode_BLGameplay.uasset
+[2018.01.21-02.15.16:020][383]LogSavePackage: Save=995.74ms
+[2018.01.21-02.15.16:020][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/FirstPersonExampleMap3563F8854A648651E27DE5BE2DBFEA1B.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2018.01.21-02.15.16:040][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
+[2018.01.21-02.15.16:164][383]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 1.912
+[2018.01.21-02.15.16:192][383]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/PlayerBase" FILE="G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/PlayerBase.uasset" SILENT=true
+[2018.01.21-02.15.16:472][383]LogSavePackage: Save=270.70ms
+[2018.01.21-02.15.16:472][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/PlayerBase9F686E1B4515F4C25D28BA9ABEB8BDB8.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/PlayerBase.uasset'
+[2018.01.21-02.15.16:486][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/PlayerBase.uasset
+[2018.01.21-02.15.16:537][383]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/ThirdPersonCharacter" FILE="G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/ThirdPersonCharacter.uasset" SILENT=true
+[2018.01.21-02.15.16:896][383]LogSavePackage: Save=325.71ms
+[2018.01.21-02.15.16:897][383]LogSavePackage: Moving 'G:/Uni/Journeyman/Base/Borderlandsy/Saved/ThirdPersonCharacterED37CCCC4BA3710AADBCC8A617C08A54.tmp' to 'G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/ThirdPersonCharacter.uasset'
+[2018.01.21-02.15.16:913][383]LogSavePackage:Display: Finished SavePackage G:/Uni/Journeyman/Base/Borderlandsy/Content/ThirdPersonBP/ThirdPersonCharacter.uasset
+[2018.01.21-02.15.20:756][702]BlueprintLog: New page: Compile Mode_BLGameplay
+[2018.01.21-02.15.56:284][157]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_48:PersistentLevel.Actor_8.DebugSkelMeshComponent_29) Already registered. Aborting.
+[2018.01.21-02.15.56:582][157]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_48:PersistentLevel.Actor_8.DebugSkelMeshComponent_29) - call TermArticulated first.
+[2018.01.21-02.16.43:212][859]LogWindows: Windows GetLastError: The operation completed successfully. (0)
